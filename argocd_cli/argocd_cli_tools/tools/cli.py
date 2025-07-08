@@ -9,6 +9,8 @@ argocd_cli_tool = ArgoCDCLITool(
     #!/bin/bash
     set -e
 
+    echo "=== Environment Variables ==="
+
     # Validate required parameters
     if [ -z "$command" ]; then
         echo "Error: Command is required"
